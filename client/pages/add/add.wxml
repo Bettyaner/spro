@@ -1,0 +1,6 @@
+<block>
+  <view>
+    <view>{{text}}:<input></input></view>
+    <view>{{marks}}:<input></input></view>
+  </view>
+</block>
