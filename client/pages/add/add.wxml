@@ -1,6 +1,10 @@
 <block>
   <view>
-    <view>{{text}}:<input></input></view>
-    <view>{{marks}}:<input></input></view>
+    <form id='payform' bindsubmit="formSubmit">
+      <view>{{text}}:<input id='pay' value='12'></input></view>
+      <view>{{marks}}:<textarea id='marks'></textarea></view>
+      <view><button form-type='submit'>提交</button></view>
+    </form>
+    <toast hidden="{{toast_isshow}}" bindchange="toast_hidden">{{toast_text}}</toast>
   </view>
 </block>
